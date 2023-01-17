@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="header__nav">
+            <div class="container">
+                <a href="#!" class="header__logo">Logo</a>
+                <div class="header__menu">
+                    <span class="header__line"></span>
+                </div>
+                <div class="header__nav-menu">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <img src="img/fantasy.png" alt="" class="header__fantasy">
+        <img src="img/cloud1.png" alt="" class="header__cloud cloud1" data-speed="0.3">
+        <img src="img/cloud2.png" alt="" class="header__cloud cloud2" data-speed="-0.5">
+        <img src="img/cloud3.png" alt="" class="header__cloud cloud3" data-speed="0.5">
+        <img src="img/boat.png" alt="" class="header__boat" data-speed="0.9">
+        <div class="header__content">
+            <h1 class="header__title">Parallax Effect</h1>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="about__cards">
+                    <div class="about__card fade-right" data-speed="400"></div>
+                    <div class="about__card fade-right" data-speed="800"></div>
+                    <div class="about__card fade-right" data-speed="1200"></div>
+                    <div class="about__card fade-right" data-speed="1600"></div>
+                </div>
+            </div>
+        </section>
+        <section class="parallax">
+            <h2 class="parallax__title">Parallax</h2>
+            <div class="parallax__box">
+                <img src="img/parallax/Parallax_3.png" alt="" class="parallax__banner">
+                <img src="img/parallax/Parallax_4.png" alt="" class="parallax__ball layer1" data-speed="-5">
+                <img src="img/parallax/Parallax_5.png" alt="" class="parallax__ball layer2" data-speed="2">
+            </div>
+        </section>
+        <section class="timer">
+            <div class="container">
+                <div class="timer__cards">
+                    <div class="timer__card">
+                        <p class="timer__num" data-num="311">311</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="#!" class="timer__btn">Button</a>
+                    </div>
+                    <div class="timer__card">
+                        <p class="timer__num" data-num="244">244</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="#!" class="timer__btn">Button</a>
+                    </div>
+                    <div class="timer__card">
+                        <p class="timer__num" data-num="188">188</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="#!" class="timer__btn">Button</a>
+                    </div>
+                    <div class="timer__card">
+                        <p class="timer__num" data-num="404">404</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="#!" class="timer__btn">Button</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scroll">
+            <div class="container">
+                <div class="scroll__cards">
+                    <div class="scroll__card fade-right" data-speed="400"><img src="https://i1.sndcdn.com/avatars-000328573748-07lcqk-t500x500.jpg" alt=""></div>
+                    <div class="scroll__card fade-right" data-speed="600"><img src="https://i1.sndcdn.com/artworks-000189849383-caobrm-t500x500.jpg" alt=""></div>
+                    <div class="scroll__card fade-right" data-speed="800"><img src="https://i1.sndcdn.com/artworks-000094576036-m804kv-t500x500.jpg" alt=""></div>
+                    <div class="scroll__card fade-right" data-speed="1000"><img src="https://i1.sndcdn.com/artworks-000083379559-o3v176-t500x500.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <div class="card">
+                    <div class="card__item"></div>
+                </div>
+                <div class="card">
+                    <div class="card__item"></div>
+                </div>
+                <div class="card">
+                    <div class="card__item"></div>
+                </div>
+                <div class="card">
+                    <div class="card__item"></div>
+                </div>
+            </div>
+        </section>
+        <section class="notes">
+            <div class="container">
+                <h2 class="notes__title">To do list</h2>
+                <div class="notes__box">
+                    <input type="text" class="notes__inp" placeholder="Notes">
+                    <button class="notes__btn notes__add">Add</button>
+                </div>
+                <ul class="notes__list">
+                    <li class="notes__item">Text <button class="notes__btn remove">X</button></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
